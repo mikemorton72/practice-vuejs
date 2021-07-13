@@ -8,7 +8,9 @@ var app = new Vue({
       { text: 'Learn Vue' },
       { text: 'Build something awesome' }
     ],
-    showHiddenInfo: false
+    showHiddenInfo: false,
+    disableText: false
+
   },
   methods: {
     addAwesomesauce: function () {
@@ -16,6 +18,9 @@ var app = new Vue({
     },
     toggleShow: function () {
       this.showHiddenInfo = !this.showHiddenInfo;
+    },
+    disableTextToggle: function () {
+      this.disableText = !this.disableText;
     }
   }
 

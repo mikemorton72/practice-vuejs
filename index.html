@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      .disabled {
+        color: LightGray;
+      }
+    </style>
     <meta charset="UTF-8" />
     <title>Practice Vue.js</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -17,8 +22,9 @@
         </li>
       </ol>
       <button v-on:click="addAwesomesauce">Woooooaaaah</button>
-      <p v-if="showHiddenInfo">Check this out it can disappear</p>
+      <p v-if="showHiddenInfo" v-bind:class="{disabled: disableText}">Check this out it can disappear and be greyed out</p>
       <button v-on:click="toggleShow">toggle</button>
+      <button v-on:click="disableTextToggle">grey out</button>
     </div>
 
   </body>
