@@ -28,7 +28,8 @@
       <hr>
       <hr>
       <p v-for="randomWord in randomWords">{{ randomWord }}</p>
+      <p><input type="text" v-model="newRandomWord"><button v-on:click="addRandomWord">Add</button></p>
     </div>
   </body>
-  
+
 </html>

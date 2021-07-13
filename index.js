@@ -15,7 +15,8 @@ var app = new Vue({
       "speaker",
       "waterbottle",
       "guitar"
-    ]
+    ],
+    newRandomWord: ""
   },
   methods: {
     addAwesomesauce: function () {
@@ -26,6 +27,9 @@ var app = new Vue({
     },
     disableTextToggle: function () {
       this.disableText = !this.disableText;
+    },
+    addRandomWord: function () {
+      this.randomWords.push(this.newRandomWord);
     }
   }
 
