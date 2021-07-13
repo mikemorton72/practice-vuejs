@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Practice Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <div id="app">
+      {{ message }}
+      <p>try it out: <input type="text" v-model="message"> </p>
+      <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+      <button v-on:click="addAwesomesauce">Woooooaaaah</button>
+    </div>
+
+  </body>
+
+</html>
