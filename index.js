@@ -7,11 +7,15 @@ var app = new Vue({
       { text: 'Learn JavaScript' },
       { text: 'Learn Vue' },
       { text: 'Build something awesome' }
-    ]
+    ],
+    showHiddenInfo: false
   },
   methods: {
     addAwesomesauce: function () {
       this.todos.push({ text: "Awesomesauce" });
+    },
+    toggleShow: function () {
+      this.showHiddenInfo = !this.showHiddenInfo;
     }
   }
 
