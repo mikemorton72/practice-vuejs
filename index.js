@@ -9,8 +9,13 @@ var app = new Vue({
       { text: 'Build something awesome' }
     ],
     showHiddenInfo: false,
-    disableText: false
-
+    disableText: false,
+    randomWords: [
+      "dafodil",
+      "speaker",
+      "waterbottle",
+      "guitar"
+    ]
   },
   methods: {
     addAwesomesauce: function () {
