@@ -7,6 +7,9 @@ var app = new Vue({
     };
   },
   methods: {
+    beforeMount() {
+      this.loadTodos();
+    },
     loadTodos: function () {
       axios
         .get("https://jsonplaceholder.typicode.com/todos")
@@ -15,5 +18,5 @@ var app = new Vue({
           this.todos = response.data;
         });
     },
-  }
+  },
 });
